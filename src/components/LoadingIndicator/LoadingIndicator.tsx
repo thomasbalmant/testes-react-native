@@ -7,7 +7,7 @@ interface LoadingIndicatorProps {
 }
 export function LoadingIndicator({isLoading = true}: LoadingIndicatorProps) {
   if (isLoading) {
-    return <ActivityIndicator color={colors.primary} size={'large'} />;
+    return <ActivityIndicator testID='LoadingIndicator' color={colors.primary} size={'large'} />;
   }
 
   return null;
