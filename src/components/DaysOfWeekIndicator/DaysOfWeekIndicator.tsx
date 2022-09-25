@@ -43,7 +43,7 @@ interface Props {
 }
 export function DaysOfWeekIndicator({days}: Props) {
   return (
-    <View style={styles.container}>
+    <View testID='DaysOfWeekIndicator' style={styles.container}>
       {DAYS.map(day => {
         const check = days.includes(day.value);
         return (
